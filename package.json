@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": "v16.11"
+    "node": ">=v16.11"
   },
   "scripts": {
     "build": "nuxt build",

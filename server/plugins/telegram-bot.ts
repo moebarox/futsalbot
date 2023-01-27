@@ -2,8 +2,8 @@ import { Telegraf } from 'telegraf';
 
 export default defineNitroPlugin(() => {
   const bot = new Telegraf(<string>process.env.BOT_TOKEN);
-  bot.telegram.getMe();
-  bot.command('hello', ctx => ctx.reply('Hallo juga'));
+  bot.telegram.getMe().then(console.log);
+  bot.command('hehe', ctx => ctx.reply('Hallo juga'));
   bot.launch();
 
   // Enable graceful stop
